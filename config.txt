@@ -1,3 +1,5 @@
 [default]
 browsertype=Chrome
 Chrome=E:\\chromedriver
+user=
+passwd=
