@@ -16,6 +16,7 @@ python manage.py test
 Sample Output:
 
 C:\Python34\Scripts\indeeproject>python manage.py test
+
 Creating test database for alias 'default'...
 .
 ----------------------------------------------------------------------
