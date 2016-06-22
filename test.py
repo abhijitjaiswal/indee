@@ -1,3 +1,9 @@
+'''
+Created on 22 June, 2016
+Author: Abhijit Jaiswal
+
+Purpose: To test login functionality of preproduction.indee.tvt
+'''
 from django.test import LiveServerTestCase
 from django.contrib.auth.models import User
 from selenium.webdriver.common.by import By
@@ -35,13 +41,14 @@ class LoginTestCase(LiveServerTestCase):
         #Find Username field and key in username
         email = self.selenium.find_element_by_name('email')
         email.click()
-        uname = "abhijit.jaiswal@gmail.com"
+        uname = self.config.get("default", "user")
         email.send_keys(uname)
         
         #Find Password field and key in password
         password = self.selenium.find_element_by_name('password')
         password.click()
-        password.send_keys("Indee77!@#")
+        passwd = self.config.get("default", "passwd")
+        password.send_keys(passwd)
         
         #Click Login button
         self.selenium.find_element_by_css_selector(".ind_bt[type='submit']").click()
