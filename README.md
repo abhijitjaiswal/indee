@@ -1,7 +1,7 @@
 # indee
 Functional Test for login.
 
-Requirement: Versions >= Python 3.4, >= Django 1.9, >= configparser 3.5, selenium, chromedriver
+Requirement: Versions >= Python 3.4, >= Django 1.9, >= configparser 3.5, selenium, chromedriver(replace path of chromedriver.exe in config.txt to your respective chromedriver path)
 
 Browsers supported: Chrome, Firefox
 
