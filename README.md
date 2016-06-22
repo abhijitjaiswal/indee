@@ -2,6 +2,7 @@
 Functional Test for login.
 
 Requirement: Versions >= Python 3.4, >= Django 1.9, >= configparser 3.5, selenium, chromedriver
+
 Browsers supported: Chrome, Firefox
 
 By default test runs on Chrome, to change the browser to Firefox. change the following in config.txt:
